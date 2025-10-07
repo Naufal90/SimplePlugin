@@ -1,0 +1,43 @@
+rewards:
+  1:
+    name: "First Day"
+    items:
+      item1:
+        material: "STONE_SWORD"
+        amount: 1
+      item2:
+        material: "BREAD"
+        amount: 16
+    commands:
+      - "eco give %player% 100"
+  
+  2:
+    name: "Second Day"
+    items:
+      item1:
+        material: "IRON_INGOT"
+        amount: 8
+    commands:
+      - "eco give %player% 200"
+  
+  3:
+    name: "Third Day"
+    items:
+      item1:
+        material: "DIAMOND"
+        amount: 2
+    commands:
+      - "eco give %player% 300"
+  
+  7:
+    name: "One Week!"
+    items:
+      item1:
+        material: "DIAMOND_SWORD"
+        amount: 1
+      item2:
+        material: "DIAMOND"
+        amount: 8
+    commands:
+      - "eco give %player% 1000"
+      - "give %player% enchanted_golden_apple 2"

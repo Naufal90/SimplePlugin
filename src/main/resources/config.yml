@@ -1,0 +1,39 @@
+# Warp Settings
+warp:
+  max-per-player: 10
+  admin-only-set: true
+  admin-only-delete: true
+  
+# TPA Settings
+tpa:
+  request-timeout: 60
+  cooldown: 30
+
+# RTP Settings
+rtp:
+  min-distance: 100
+  max-distance: 1000
+  max-attempts: 10
+  cooldown: 60
+
+# Auth Settings
+auth:
+  login-timeout: 60
+  require-strong-passwords: true
+  min-password-length: 4
+
+# Kit Settings
+kits:
+  auto-give-starter: true
+  cooldown-bypass-permission: "kit.bypass.cooldown"
+
+# Daily Reward Settings
+daily-reward:
+  use-server-time: true
+  reset-streak-after-miss: 1
+  gui-enabled: true
+  
+# Permission Settings
+permissions:
+  use-luckperms: true
+  op-bypass: true

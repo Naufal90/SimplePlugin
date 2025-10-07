@@ -1,0 +1,49 @@
+kits:
+  starter:
+    display-name: "&aStarter Kit"
+    cooldown: 86400
+    give-on-first-join: true
+    items:
+      sword:
+        material: "STONE_SWORD"
+        amount: 1
+        name: "&7Starter Sword"
+        lore:
+          - "&7Basic starter weapon"
+      pickaxe:
+        material: "STONE_PICKAXE"
+        amount: 1
+      axe:
+        material: "STONE_AXE"
+        amount: 1
+      shovel:
+        material: "STONE_SHOVEL"
+        amount: 1
+      food:
+        material: "BREAD"
+        amount: 16
+  
+  vip:
+    display-name: "&6VIP Kit"
+    cooldown: 43200
+    give-on-first-join: false
+    items:
+      sword:
+        material: "IRON_SWORD"
+        amount: 1
+        name: "&bVIP Sword"
+        lore:
+          - "&7Exclusive VIP weapon"
+        enchantments:
+          SHARPNESS: 2
+      pickaxe:
+        material: "IRON_PICKAXE"
+        amount: 1
+        enchantments:
+          EFFICIENCY: 2
+      food:
+        material: "COOKED_BEEF"
+        amount: 32
+      blocks:
+        material: "IRON_INGOT"
+        amount: 16

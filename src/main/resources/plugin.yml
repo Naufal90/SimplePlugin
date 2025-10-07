@@ -1,0 +1,77 @@
+name: SimplePlugin
+version: 1.0.0
+main: com.naufal90.SimplePlugin
+api-version: 1.20
+description: TPA, Warp, and RTP plugin with multiworld support
+author: Naufal90
+website: www.naufal90.my.id
+depend: []
+softdepend: [LuckPerms, PlaceholderAPI]
+commands:
+  tpa:
+    description: Send TPA request to a player
+    usage: /tpa <player>
+  tpahere:
+    description: Send TPA here request to a player
+    usage: /tpahere <player>
+  tpaccept:
+    description: Accept TPA request
+    usage: /tpaccept
+  tpdeny:
+    description: Deny TPA request
+    usage: /tpdeny
+  warp:
+    description: Teleport to a warp
+    usage: /warp <name>
+  setwarp:
+    description: Set a warp at current location
+    usage: /setwarp <name>
+  delwarp:
+    description: Delete a warp
+    usage: /delwarp <name>
+  warps:
+    description: List all warps
+    usage: /warps
+  rtp:
+    description: Random teleport
+    usage: /rtp
+  kit:
+    description: Get a kit
+    usage: /kit <name>
+  kits:
+    description: List available kits
+    usage: /kits
+  daily:
+    description: Open daily rewards GUI
+    usage: /daily [claim]
+  register:
+    description: Register an account
+    usage: /register <password> <confirm>
+  login:
+    description: Login to your account
+    usage: /login <password>
+permissions:
+  simple.admin:
+    description: "Full access to all SIMPLE features"
+    default: op
+  simple.tpa:
+    description: "Allow using TPA command"
+    default: true
+  simple.rtp:
+    description: "Allow using RTP command" 
+    default: true
+  simple.warp.*:
+    description: "Access to all warps"
+    default: true
+  simple.setwarp:
+    description: "Allow setting warps"
+    default: op
+  simple.delwarp:
+    description: "Allow deleting warps"
+    default: op
+  simple.kit.*:
+    description: "Access to all kits"
+    default: true
+  simple.daily:
+    description: "Allow using daily rewards"
+    default: true

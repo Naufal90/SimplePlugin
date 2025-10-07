@@ -1,0 +1,81 @@
+# SIMPLE Plugin Permissions
+# Admin permissions
+simple.admin:
+  description: "Full access to all SIMPLE features"
+  children:
+    - simple.*
+    
+simple.*:
+  description: "All SIMPLE permissions"
+  children:
+    - simple.tpa
+    - simple.tpahere
+    - simple.rtp
+    - simple.warp.*
+    - simple.setwarp
+    - simple.delwarp
+    - simple.kit.*
+    - simple.daily
+    - simple.bypass.cooldown
+
+# TPA permissions
+simple.tpa:
+  description: "Allow using /tpa command"
+simple.tpahere:
+  description: "Allow using /tpahere command"
+
+# RTP permission
+simple.rtp:
+  description: "Allow using /rtp command"
+
+# Warp permissions
+simple.warp.*:
+  description: "Access to all warps"
+  children:
+    - simple.warp.<warpname>
+    
+simple.setwarp:
+  description: "Allow setting warps"
+simple.delwarp:
+  description: "Allow deleting warps"
+
+# Kit permissions
+simple.kit.*:
+  description: "Access to all kits"
+  children:
+    - simple.kit.<kitname>
+    
+simple.kit.starter:
+  description: "Access to starter kit"
+simple.kit.vip:
+  description: "Access to VIP kit"
+
+# Daily reward permission
+simple.daily:
+  description: "Allow using daily rewards"
+
+# Cooldown bypass
+simple.bypass.cooldown:
+  description: "Bypass all cooldowns"
+
+# Group-based permissions example
+group.default:
+  permissions:
+    - simple.tpa
+    - simple.rtp
+    - simple.warp.*
+    - simple.kit.starter
+    - simple.daily
+
+group.vip:
+  permissions:
+    - simple.tpa
+    - simple.tpahere
+    - simple.rtp
+    - simple.warp.*
+    - simple.kit.*
+    - simple.daily
+
+group.admin:
+  permissions:
+    - simple.admin
